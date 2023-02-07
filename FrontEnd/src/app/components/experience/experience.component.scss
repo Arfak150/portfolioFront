@@ -1,0 +1,41 @@
+.projects-section{
+    background-image: url(../../../assets/images/about2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.projects-container{
+    height: 100%;
+    width: 670px;
+}
+
+.projects-title{
+    color: #00FFFF;
+
+    h2{
+        font-weight: 800;
+        font-size: 64px;
+    }
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto ;
+
+}
+
+.project-card{
+    background-color: #081528;
+    overflow: hidden;
+    width: 261px;
+    height: 315px;
+    border: 2px solid #00FFFF;
+    text-align: center;
+    margin: 0 15px 15px 0;
+    border-radius: 15px;
+    color: #FFF;
+
+}

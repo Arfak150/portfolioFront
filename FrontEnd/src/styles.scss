@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    display: none;
+}
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+// background: #081528;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+// background: rgb(255, 255, 255); 
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+// background: #a7a7a7; 
+// }

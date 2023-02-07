@@ -1,0 +1,17 @@
+<header class="d-flex text-center justify-content-center align-items-center">
+    <div class="navbar container d-flex justify-content-around text-center align-items-center">
+        <div class="navbar-icon-container d-flex text-center justify-content-center align-items-center">
+            <P>F.A</P>
+        </div>
+        <div class="navbar-links-container d-flex">
+            <ul class="lista-nav navbar-nav d-flex flex-row ">
+                <li class="nav-item"><a href="#landing" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="" class="nav-link">EXPERIENCE</a></li>
+                <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
+            </ul>
+            <button class="login-button" type="button" (click)="login()" *ngIf="!isLogged">LOGIN</button>
+            <button class="login-button" type="button" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+        </div>
+    </div>
+</header>

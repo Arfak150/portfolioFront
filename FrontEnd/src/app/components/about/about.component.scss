@@ -1,0 +1,44 @@
+.about-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../../assets/images/about-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: center;
+}
+
+.info-container{
+    margin-right: 5em;
+
+}
+
+.info-presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+.info-presentacion h2{
+    color: #742832;
+    font-size: 48px;
+    font-weight: 400;
+    
+}
+
+.info-presentacion p{
+    color: #FDEADE;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    
+}
+
+.info-largo{
+    text-align: start;
+    color: #ccc;
+    line-height: 40px;
+}

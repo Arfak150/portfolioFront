@@ -1,0 +1,33 @@
+header{
+    color: #fff;
+    width: 100vw;
+    position: fixed;
+}
+
+
+.navbar-icon-container{
+    // background-color: bisque;
+    font-size: 36px;
+    font-weight: 200;
+}
+
+
+.navbar-links-container li{
+    // background-color: chartreuse;
+    margin: 0 1em;
+    font-weight: 500;
+
+    a{
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+.login-button{
+    border-radius: 10px;
+    border: 0;
+    padding: 0 25px;
+    color: #000;
+    background-color: rgb(0,255,255);;
+    font-weight: 700;
+}

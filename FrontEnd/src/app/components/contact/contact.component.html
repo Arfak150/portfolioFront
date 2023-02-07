@@ -1,0 +1,19 @@
+<section class="contact-section d-flex align-items-center">
+    <div class="container">
+        <div class="form row col-4 offset-9">
+            <div class="form-description">
+                <h2>Contact me</h2>
+                <p>im interested in freelance opportunities - especially ambitious or large projects. If you have other request or question, dont hesitate to use the form</p>
+            </div>
+            <form className='formulario' action="POST">
+                <input class="form-name" type="text" name="name" required placeholder='Name'/>
+                <input class="form-email" type="email" name="email" required placeholder='Email'/>
+                <input class="form-subject" type="text" name="subject" required placeholder='Tell me your idea'/>
+                <textarea class="form-mesagge" placeholder='Message' name="message" id="" cols="30" rows="10" required ></textarea>
+            </form>
+            <div>
+                <input class="form-btn" type="submit" value="Send!" className='btn-primary enviar'/>
+            </div>
+        </div>
+    </div>
+</section>
