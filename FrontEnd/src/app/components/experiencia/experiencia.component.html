@@ -4,20 +4,27 @@
     
         <div class="projects-title d-flex align-items-center" >
             <h2>Projects</h2>
-        </div>
-    
-        <div class="col-lg-2">
-            <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
-                Nueva Experiencia
-            </button>
+            
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged">
+                        Nuevo Proyecto
+                    </button>
+                </div>
         </div>
 
         <div class="box-container" >
     
             <div class="project-card" *ngFor="let Experiencia of expe">
                 <img src="" alt="">
+                
                 <H3>{{Experiencia.nombreE}}</H3>
+                
                 <p>{{Experiencia.descripcionE}}</p>
+                
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"></i></button>
+
+                <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i></button>
+               
             </div>
 
         </div>
