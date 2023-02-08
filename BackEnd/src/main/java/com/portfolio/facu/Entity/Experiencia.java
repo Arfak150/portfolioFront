@@ -22,12 +22,9 @@ public class Experiencia {
     public Experiencia() {
     }
 
-    public Experiencia(String nombreE) {
-        this.nombreE = nombreE;
-    }
-
     public Experiencia(String nombreE, String descripcionE) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.nombreE = nombreE;
+        this.descripcionE = descripcionE;
     }
 
     //getters and setters

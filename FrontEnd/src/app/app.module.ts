@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { interceptorProvider } from './service/interceptor-service';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
     HomeComponent,
     LoginComponent,
     ExperienciaComponent,
+    NewExperienciaComponent,
   ],
   imports: [
     BrowserModule,

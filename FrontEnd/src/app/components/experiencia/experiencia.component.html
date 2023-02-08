@@ -6,6 +6,12 @@
             <h2>Projects</h2>
         </div>
     
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+                Nueva Experiencia
+            </button>
+        </div>
+
         <div class="box-container" >
     
             <div class="project-card" *ngFor="let Experiencia of expe">
