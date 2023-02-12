@@ -9,7 +9,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/'
+  authURL = 'https://private-arda-arfak150.koyeb.app/'
+  
 
   constructor(private httpClient: HttpClient) { }
 
