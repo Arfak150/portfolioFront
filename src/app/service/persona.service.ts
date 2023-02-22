@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://private-arda-arfak150.koyeb.app/personas/'
+  URL = 'https://facuback.onrender.com/personas/'
   constructor(private http: HttpClient) { }
 
 
