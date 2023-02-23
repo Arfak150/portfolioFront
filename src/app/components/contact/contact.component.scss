@@ -1,3 +1,13 @@
+$principal-color: #081528;
+$secondary-color: #5F99A9;
+$pastel-white: #FDEADE;
+$red-gradient: linear-gradient(to right,  #FF0C0C, #FF3A6A );
+$green-gradient : linear-gradient(to right, #00FFFF, #00FFA3 );
+$blue-gradient: linear-gradient(to right, #1B2B44, #081528);
+
+
+
+
 .contact-section{
     height: 100vh;
     width: 100%;
@@ -8,7 +18,7 @@
 }
 
 .form{
-    width: 520px;
+    width: 495px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -22,17 +32,17 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 74px;
+    margin-bottom: 50px;
 
     h2{
         font-size: 50px;
-        color: #E5D4C9;
+        color: $pastel-white;
         font-weight: 700;
         letter-spacing: -2px;
     }
     p{
         font-size: 13px;
-        color: #E5D4C9;
+        color: $pastel-white;
         letter-spacing: 2px;
         font-weight: 300;
 
@@ -40,7 +50,7 @@
 }
 
 form input, form input::placeholder, form textarea, form textarea::placeholder {
-    background-color: #E5D4C9;
+    background-color: $pastel-white;
     color: #081528;
     font-size: 15px;
     font-weight: 600;
@@ -74,10 +84,11 @@ form textarea::placeholder{
 }
 
 .form-btn{
+    margin: 25px auto 0px auto;
     width: 115px;
     height: 35px;
     color: #081528;
-    background-color: #00FFFF;
+    background:$green-gradient;
     border-radius: 10px;
     font-weight: 600;
     font-size: 20px;

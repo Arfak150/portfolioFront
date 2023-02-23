@@ -1,3 +1,10 @@
+$principal-color: #081528;
+$secondary-color: #5F99A9;
+$pastel-white: #FDEADE;
+$red-gradient: linear-gradient(to right,  #FF0C0C, #FF3A6A );
+$green-gradient : linear-gradient(to right, #00FFFF, #00FFA3 );
+$blue-gradient: linear-gradient(to right, #1B2B44, #081528);
+
 *{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -6,26 +13,6 @@
 }
 
 body{
-    background-color: #081528;
+    background-color: $principal-color;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 8px;
-    display: none;
-}
-
-// /* Track */
-// ::-webkit-scrollbar-track {
-// background: #081528;
-// }
-
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-// background: rgb(255, 255, 255); 
-// }
-
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-// background: #a7a7a7; 
-// }

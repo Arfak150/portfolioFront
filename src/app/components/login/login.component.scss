@@ -1,10 +1,11 @@
+$principal-color: #081528;
+$secondary-color: #5F99A9;
+$pastel-white: #FDEADE;
+$red-gradient: linear-gradient(to right,  #FF0C0C, #FF3A6A );
+$green-gradient : linear-gradient(to right, #00FFFF, #00FFA3 );
+$blue-gradient: linear-gradient(to right, #1B2B44, #081528);
+
 .gradient-custom {
-    /* fallback for old browsers */
-    background: #6a11cb;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
-    }
+
+    background: $principal-color;
+}

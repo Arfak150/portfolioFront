@@ -1,45 +1,67 @@
+$principal-color: #081528;
+$secondary-color: #5F99A9;
+$pastel-white: #FDEADE;
+$red-gradient: linear-gradient(to right,  #FF0C0C, #FF3A6A );
+$green-gradient : linear-gradient(to right, #00FFFF, #00FFA3 );
+$blue-gradient: linear-gradient(to right, #1B2B44, #081528);
+
+
 .hero{
     width: 100%;
+    min-height: 100vh;
     height: 100vh;
-}
-.presentacion{
-    margin-left: 179px;
-    width: 390px;
-    height: 318px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hi-im{
+.presentacion-1 h3{
     color: #fff;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 300;
 }
-.name{
-    color: rgb(255,12,12);
-    color: linear-gradient(90deg, rgba(255,12,12,1) 0%, rgba(255,58,106,1) 100%);
-    font-size: 64px;
+
+.presentacion-1 h1{
+    background: $red-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 128px;
     font-weight: 900;
+    letter-spacing: -4px;
+    margin: 0;
+    padding: 0;
+    line-height: .8;
 }
 
 .presentacion-2{
-
-    font-size: 24px;
-    font-weight: 300;
-
+    margin: 25px 0
 }
 
 .presentacion-2 p{
-    color: rgb(0,255,255);
-    color: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,255,163,1) 100%);
+    font-size: 32px;
+    font-weight: 200;
+    background: $green-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 0;
+    letter-spacing: 1px;
 
 }
 
 .view-more-btn{
-    margin-top: 16px;
     font-size: 18px;
-    background-color: #FF0C0C;
+    background: $red-gradient;
     padding: 8px 28px;
-    border-radius: 20px;
+    border-radius: 15px;
     text-decoration: none;
     color: #fff;
+    transition: .2s;
+    -webkit-transition: .2s;
+}
+
+.view-more-btn:hover{
+    background: $green-gradient;
+    color: black;
 }

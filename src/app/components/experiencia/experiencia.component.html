@@ -1,33 +1,59 @@
-<section class="projects-section">
+<section class="projects-section container projects-container">
 
-    <div class="projects-container row col-5 offset-7 d-flex   justify-content-around">
-    
-        <div class="projects-title d-flex align-items-center" >
-            <h2>Projects</h2>
-            
-                <div class="col-lg-2">
-                    <button type="button" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged">
-                        Nuevo Proyecto
-                    </button>
-                </div>
-        </div>
-
-        <div class="box-container" >
-    
-            <div class="project-card" *ngFor="let Experiencia of expe">
-                <img src="" alt="">
-                
-                <H3>{{Experiencia.nombreE}}</H3>
-                
-                <p>{{Experiencia.descripcionE}}</p>
-                
-                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"></i></button>
-
-                <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i></button>
-               
+    <div class="projects-title" >
+        <h2>PROJECTS</h2>
+        
+            <div class="col-lg-2">
+                <button type="button" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged">
+                    Nuevo Proyecto
+                </button>
             </div>
+    </div>
 
+    <div class="box-container" >
+
+        <!-- <div class="project-card" *ngFor="let Experiencia of expe">
+            <img src="" alt="">
+            
+            <H3>{{Experiencia.nombreE}}</H3>
+            
+            <p>{{Experiencia.descripcionE}}</p>
+            
+            <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"></i></button>
+
+            <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i></button>
+            
+        </div> -->
+
+        <div class="project-card">
+            <img src="" alt="">
+            <figcaption>
+                <H3> <span>PROJECT 1</span> </H3>
+                <p>Description</p>
+            </figcaption>
+            <a href="#"></a>
+            
+        
         </div>
+        <div class="project-card">
+            <img src="" alt="">
+            <figcaption>
+                <H3><span>PROJECT 2</span></H3>
+                <p>Description</p>
+            </figcaption>
+            <a href="#"></a>
+        
+        </div>
+        <div class="project-card">
+            <img src="" alt="">
+            <figcaption>
+                <H3><span>PROJECT 3</span></H3>
+                <p>Description</p>
+            </figcaption>
+            <a href="#"></a>
+        
+        </div>
+
     </div>
     
     </section>

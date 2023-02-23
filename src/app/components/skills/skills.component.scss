@@ -1,8 +1,55 @@
+$principal-color: #081528;
+$secondary-color: #5F99A9;
+$pastel-white: #FDEADE;
+$red-gradient: linear-gradient(to right,  #FF0C0C, #FF3A6A );
+$green-gradient : linear-gradient(to right, #00FFFF, #00FFA3 );
+$blue-gradient: linear-gradient(to right, #1B2B44, #081528);
+
+
 .skills-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     width: 100%;
-    height: 100vh;
 }
 
-.skills-info{
-    color: #fff;
+
+.frontend-container, .backend-container{
+    background: $blue-gradient;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    width: 660px;
+    height: 500px;
+    padding: 20px 100px;
+    position: relative;
+    border-radius: 50px;
+}
+
+.frontend-container h5, .backend-container h5{
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.frontend-container div, .backend-container div{
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 180px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: $green-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.frontend-skills{
+    
+    flex-wrap: wrap;
+    display: flex;
 }
