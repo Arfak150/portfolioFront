@@ -8,12 +8,21 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://facuback.onrender.com/personas/'
-  constructor(private http: HttpClient) { }
+ // URL = 'https://facuback.onrender.com/personas/'
+  URL = 'http://localhost:8080/personas/'
+  constructor(private httpClient: HttpClient) { }
 
-
-  public getPersona(): Observable<persona>{
-    return this.http.get<persona>(this.URL+'traer/perfil')
+  public lista(): Observable<persona[]>{
+    return this.httpClient.get<persona[]>(this.URL + 'lista');
   }
+
+  public detail(id: number): Observable<persona>{
+    return this.httpClient.get<persona>(this.URL + `detail/${id}`)
+  }
+
+  public update(id: number, experiencia: persona): Observable<any>{
+    return this.httpClient.put<any>(this.URL + `update/${id}`, persona)
+  }
+
 }
   

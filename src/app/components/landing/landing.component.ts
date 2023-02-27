@@ -8,11 +8,17 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  persona: persona = new persona("", "", "");
+  persona: persona = null;
 
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {this.persona = data })
+    this.cargarPersona()
+  }
+
+  cargarPersona(){
+    this.personaService.detail(1).subscribe(data =>
+        {this.persona = data}
+      )
   }
 }
