@@ -14,15 +14,12 @@
 
         <div class="project-card" *ngFor="let Experiencia of expe">
             <img src="" alt="">
-            
-            <H3>{{Experiencia.nombreE}}</H3>
-            
-            <p>{{Experiencia.descripcionE}}</p>
-            
-            <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"></i></button>
-
-            <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i></button>
-            
+            <figcaption>
+                <H3>{{Experiencia.nombreE}}</H3>
+                <p>{{Experiencia.descripcionE}}</p>
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"></i></button>
+                <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i></button>
+            </figcaption>
         </div>
 
         <!-- <div class="project-card">
