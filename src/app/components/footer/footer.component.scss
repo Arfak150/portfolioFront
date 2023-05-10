@@ -1,6 +1,41 @@
 .footer-section{
-    height: 20vh;
-    max-height: 20vh;
+    height: 250px;
+    max-height: 400px;
     width: 100%;
     background-color: black;
+    color: white;
+}
+
+
+footer{
+    height: 100%;
+}
+
+.footer-contenedor{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+h3{
+    font-size: 44px;
+    font-weight: 200;
+}
+
+p{
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.texto-derecha{
+    text-align: center;
+}
+
+a{
+    margin: 0 5px;
+}
+
+i{
+    font-size: 23px;
 }

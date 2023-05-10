@@ -4,14 +4,14 @@
             <P>F.A</P>
         </div>
         <div class="navbar-links-container">
-            <ul class="lista-nav navbar-nav">
+            <ul class="lista-nav">
                 <li class="nav-item"><a href="#landing" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-                <li class="nav-item"><a href="" class="nav-link">EXPERIENCE</a></li>
-                <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">ABOUT ME</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
             </ul>
             <button class="login-button" type="button" (click)="login()" *ngIf="!isLogged">LOGIN</button>
-            <button class="login-button" type="button" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+            <button class="login-button" type="button" (click)="onLogOut()" *ngIf="isLogged"><i class="bi bi-box-arrow-right"></i></button>
         </div>
     </div>
 </header>

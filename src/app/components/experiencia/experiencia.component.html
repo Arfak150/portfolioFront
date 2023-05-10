@@ -1,4 +1,4 @@
-<section class="projects-section container projects-container">
+<section id="projects" class="projects-section projects-container">
 
     <div class="projects-title" >
         <h2>PROJECTS</h2>
@@ -12,7 +12,7 @@
 
     <div class="box-container" >
 
-        <div class="project-card" *ngFor="let Experiencia of expe">
+        <!-- <div class="project-card" *ngFor="let Experiencia of expe">
             <img src="" alt="">
             <figcaption>
                 <H3>{{Experiencia.nombreE}}</H3>
@@ -20,36 +20,55 @@
                 <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"></i></button>
                 <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i></button>
             </figcaption>
+        </div> -->
+
+        <div class="project-card">
+            <!-- <img src="" alt=""> -->
+            <figcaption>
+                <div>
+                    <p class="fecha">2023</p>
+                    <p class="descripcion">
+                        HONEY <br>
+                        E-COMMERCE <br>
+                        WEBSITE</p>
+                </div>
+                <div class="btn-contenedor">
+                    <a href=""><button>Read More</button></a>
+                </div>
+            </figcaption>
         </div>
 
-        <!-- <div class="project-card">
-            <img src="" alt="">
-            <figcaption>
-                <H3> <span>PROJECT 1</span> </H3>
-                <p>Description</p>
-            </figcaption>
-            <a href="#"></a>
-            
-        
-        </div>
         <div class="project-card">
-            <img src="" alt="">
+            <!-- <img src="" alt=""> -->
             <figcaption>
-                <H3><span>PROJECT 2</span></H3>
-                <p>Description</p>
+                <div>
+                    <p class="fecha">2023</p>
+                    <p class="descripcion">
+                        HONEY <br>
+                        E-COMMERCE <br>
+                        WEBSITE</p>
+                </div>
+                <div class="btn-contenedor">
+                    <a href=""><button>Read More</button></a>
+                </div>
             </figcaption>
-            <a href="#"></a>
-        
         </div>
+
         <div class="project-card">
-            <img src="" alt="">
+            <!-- <img src="" alt=""> -->
             <figcaption>
-                <H3><span>PROJECT 3</span></H3>
-                <p>Description</p>
+                <div>
+                    <p class="fecha">2023</p>
+                    <p class="descripcion">
+                        HONEY <br>
+                        E-COMMERCE <br>
+                        WEBSITE</p>
+                </div>
+                <div class="btn-contenedor">
+                    <a href=""><button>Read More</button></a>
+                </div>
             </figcaption>
-            <a href="#"></a>
-        
-        </div> -->
+        </div>
 
     </div>
     

@@ -7,27 +7,28 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
 
 
 .projects-section{
-    height: 100vh;
+    height: auto;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 
 .projects-title h2{
-
+    margin: 6rem 0 5rem;
     color: $secondary-color;
     letter-spacing: -3px;
-    font-weight: 800;
-    font-size: 96px;
+    font-weight: 500;
+    font-size: 70px;
 }
 
 .box-container{
     grid-template-columns: auto auto; 
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+
 
 }
 
@@ -37,22 +38,60 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
     width: 261px;
     height: 315px;
     text-align: center;
-    margin: 0 50px 0 0;
-    border-radius: 15px;
-    background: $blue-gradient;
+    // margin: 0 50px 0 0;
+    margin: 35px;
+    border-radius: 40px;
+    background: white;
     overflow: hidden;
     position: relative;
+    box-shadow: 14px 22px 15px 0px rgba(0, 0, 0, 0.40);
 
 }
 
 
 .project-card p{
+    font-size: 16px;
+
+
+}
+
+.project-card .fecha{
+    margin: 2rem 0 1rem 1rem;
+    font-size: 20px;
+    color: #5F99A9;
+}
+
+.project-card .descripcion{
+    margin: 0rem 0 0 1rem;
     background: $green-gradient;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 12px;
 }
+
+.project-card .btn-contenedor{
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-card a button{
+    background: $blue-gradient;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 8em;
+    height: 2.2em;
+    font-weight: 700;
+
+}
+
+.project-card a button:hover{
+    background: $green-gradient;
+    color: black;
+}
+
+
 
 .project-card *{
     -webkit-box-sizing: border-box;
@@ -61,10 +100,8 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
     transition: all 0.45s ease;
 }
 
-.project-card::before, .project-card::after{
-    background: linear-gradient(to right,  #081528, #1B2B44 );
-    border-top: 50px solid #5F99A9;
-    border-bottom: 50px solid #5F99A9;
+.project-card::after{
+    background: linear-gradient(to right,  rgba(8, 21, 40, 0.9), rgb(8, 21, 40, 0.9) );
     position: absolute;
     top: 0;
     bottom: 0;
@@ -77,47 +114,13 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
     opacity: 0;
 }
 
-.project-card::before{
-    -webkit-transform: scaleY(2);
-    transform: scaleY(2);
-}
-
-.project-card::after{
-    -webkit-transform: scaleY(2);
-    transform: scaleY(2);
-}
-
 .project-card img{
     vertical-align: top;
     max-width: 100%;
     backface-visibility: hidden;
 }
 
-.project-card h3{
-    background: $green-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.3em;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin: 0;
-    text-transform: uppercase;
-}
 
-.project-card h3 span{
-    display: block;
-    font-weight: 700;
-}
-
-.project-card a{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 3;
-}
 
 .project-card:hover img, .container.hover img{
     opacity: 0.7;
@@ -129,19 +132,15 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
     bottom: 0;
     left: 0;
     right: 0;
-    align-items: center;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.1em;
+    text-align: start;
     opacity: 0;
     z-index: 2;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
 
-.project-card:hover::before, .project-card.hover::before, .project-card:hover::after, .project-card.hover::after{
+.project-card:hover::after, .project-card.hover::after{
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
@@ -152,4 +151,49 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
     opacity: 1;
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .projects-title h2{
+        font-size: 80px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .projects-title h2{
+        font-size: 78px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .projects-title h2{
+        font-size: 92px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .projects-section{
+        padding: 0 70px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .projects-section{
+        padding: 0 140px;
+    }
+
+    .projects-title h2{
+        font-size: 96px;
+    }
+
 }

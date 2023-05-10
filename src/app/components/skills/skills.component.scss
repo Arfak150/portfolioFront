@@ -18,18 +18,20 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
 
 .frontend-container, .backend-container{
     background: $blue-gradient;
+    box-shadow: 14px 22px 15px 0px rgba(0, 0, 0, 0.40);
     color: red;
     display: flex;
     flex-direction: column;
-    width: 660px;
-    height: 500px;
-    padding: 20px 100px;
+    width: 80%;
+    // height: 500px;
+    padding: 40px 30px;
     position: relative;
     border-radius: 50px;
+    margin: 50px 0;
 }
 
 .frontend-container h5, .backend-container h5{
-    margin: 0 auto;
+    margin: 0 auto 38px auto;
     font-weight: 700;
     font-size: 20px;
 }
@@ -42,14 +44,95 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background: $green-gradient;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.frontend-container div p, .backend-container div p{
+    padding: 17px 0;
+}
+
+
 .frontend-skills{
     
     flex-wrap: wrap;
     display: flex;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+    .skills-section{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+    
+    
+    .frontend-container, .backend-container{
+        background: $blue-gradient;
+        box-shadow: 14px 22px 15px 0px rgba(0, 0, 0, 0.40);
+        color: red;
+        display: flex;
+        flex-direction: column;
+        width: 660px;
+        height: 500px;
+        padding: 20px 100px;
+        position: relative;
+        border-radius: 50px;
+        margin: 25px;
+    }
+    
+    .frontend-container h5, .backend-container h5{
+        margin: 0 auto 38px auto;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    
+    .frontend-container div, .backend-container div{
+        font-size: 16px;
+        font-weight: 500;
+        padding-right: 180px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background: $green-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .frontend-container div p, .backend-container div p{
+        padding: 17px 0;
+    }
+    
+    
+    .frontend-skills{
+        
+        flex-wrap: wrap;
+        display: flex;
+    }
+    
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

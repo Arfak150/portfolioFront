@@ -10,68 +10,77 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
 
 .about-section{
     height: 100vh;
+    // height: 80vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end; 
-    
+    justify-content: center;
+    // flex-direction: column;
+    background: linear-gradient(to right, rgba(0, 255, 255, 0.13), rgba(0, 255, 163, 0.13) );
+    overflow: hidden;
 
 }
 
 .info-container{
-    min-height: 100%;
+    // min-height: 100%;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    // position: relative;
 }
 
-.info-container::after {
-    background: $green-gradient;
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    top: 0;
-    right: 0;
-    content: '';
-    opacity: .2;
-    z-index: -1;
-}
+
 
 .info-presentacion{
+    width: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     margin-bottom: 30px;
 }
 
 .info-presentacion h2{
+    text-align: center;
     color: $pastel-white;
-    font-size: 64px;
+    font-size: 54px;
     font-weight: 400;
     
 }
 
 .info-presentacion p{
     color: $pastel-white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 200;
     letter-spacing: 4px;
+    margin-top: 20px;
+    text-align: center;
+
     
 }
 
 .info-largo{
-    text-align: start;
+    
+    text-align: center;
     color: #ddd;
-    line-height: 50px;
+    // line-height: 50px;
+    line-height: 30px;
+    padding: 0 9px;
 }
+
+.info-largo p {
+    font-size: 14px;
+}
+
 
 .view-more-btn{
     font-size: 18px;
     font-weight: 800;
     background: $green-gradient;
-    padding: 8px 28px;
+    padding: 8px 22px;
+    margin-top: 30px;
+    width: auto;
     border-radius: 15px;
     text-decoration: none;
     color: #000;
@@ -83,3 +92,28 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
     background: $red-gradient;
     color: #fff;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .info-container{
+        width: 65vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .info-container{
+        width: 55vw;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

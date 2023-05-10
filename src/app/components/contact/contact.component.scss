@@ -19,49 +19,60 @@ $blue-gradient: linear-gradient(to right, #1B2B44, #081528);
 
 .form{
     width: 495px;
-    position: relative;
+    // position: relative;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    // justify-content: center;
 }
 
 
 .form-description{
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    // color: #fff;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
     text-align: center;
     margin-bottom: 50px;
 
     h2{
-        font-size: 50px;
+        font-size: 62px;
         color: $pastel-white;
         font-weight: 700;
-        letter-spacing: -2px;
+        // letter-spacing: -2px;
     }
     p{
-        font-size: 13px;
+        font-size: 16px;
         color: $pastel-white;
-        letter-spacing: 2px;
+        letter-spacing: .5px;
         font-weight: 300;
 
     }
 }
+input, textarea{
+    box-shadow: 15px 18px 8px 0px rgba(0, 0, 0, 0.2);
+}
 
-form input, form input::placeholder, form textarea, form textarea::placeholder {
+form{
+    text-align: center;
+}
+
+form input,form textarea {
     background-color: $pastel-white;
     color: #081528;
     font-size: 15px;
     font-weight: 600;
-    padding: 0 5px;
+    padding: 5px 5px;
     border: none;
     border-radius: 10px;
+    resize: none;
 }
 
-form textarea::placeholder{
-    padding-top: 5px;
+form input::placeholder, form textarea::placeholder{
+    padding: 5px 5px;
 }
+
 
 .form-name, .form-email, .form-subject{
     margin: 0 0px 35px 0 ;
@@ -93,4 +104,42 @@ form textarea::placeholder{
     font-weight: 600;
     font-size: 20px;
     display: inline-block;
+    border: none;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .form-name, .form-email, .form-subject{
+        margin: 0 0px 35px 0 ;
+        width: 42vw;
+        height: 41px;
+    
+    }
+    
+    .form-name{
+        margin-right: 35px;
+    }
+    
+    .form-subject{
+        width: 90vw;
+    }
+    
+    .form-mesagge{
+        width: 90vw;
+        height: 228px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
